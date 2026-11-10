@@ -36,7 +36,7 @@ The slides will be uploaded here after the workshop.
 ```bash
 # run from inside the repository folder (bacterial-phylogenomics-workshop/)
 conda activate ./conda_envs/phylo-gwas
-Rscript -e 'devtools::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)'
+Rscript -e 'remotes::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)'
 gloome --help
 ```
 

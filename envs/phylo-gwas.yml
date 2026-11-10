@@ -1,6 +1,6 @@
 # Environment 2: gain/loss, co-evolution and gene-content GWAS (handout steps 5-6)
 #   conda env create -f envs/phylo-gwas.yml -p ./conda_envs/phylo-gwas && conda activate ./conda_envs/phylo-gwas
-#   Rscript -e 'devtools::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)'
+#   Rscript -e 'remotes::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)'
 # GLOOME pins numpy<2, which is why this is a separate environment.
 name: phylo-gwas
 channels:
@@ -14,7 +14,7 @@ dependencies:
   - matplotlib
   - pyseer
   - r-base
-  - r-devtools
+  - r-remotes
   - r-igraph
   - pip
   - pip:

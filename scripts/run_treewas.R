@@ -1,5 +1,5 @@
 # Real treeWAS (Collins & Didelot 2018, PLoS Comput Biol) on the toy example
-# install.packages("devtools"); devtools::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)
+# install.packages("remotes"); remotes::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)
 library(treeWAS); library(ape)
 tree <- read.tree("toy2_tree.nwk")
 pa   <- read.delim("toy2_PA_matrix.tsv", row.names=1, check.names=FALSE)
