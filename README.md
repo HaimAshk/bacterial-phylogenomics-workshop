@@ -80,6 +80,8 @@ linked, which are decoys).
 
 Genome sequences are not included: download them from NCBI with the accessions (see `scripts/ncbi_metadata.sh`).
 
+The **full Microbializer results** for this dataset (about 400 MB zip) are on Keeper: [download](https://keeper.mpdl.mpg.de/seafhttp/f/d7752012736949e4b776/?op=view). *This link expires on about 8 February 2027. After that you can rerun Microbializer yourself with the accessions above, or contact me.*
+
 ## Hands-on in short
 1. **Microbializer**: upload a zip of genomes (`scripts/make_microbializer_zip.sh`), set the outgroup, download tree and phyletic pattern.
 2. **GLOOME / CoPAP**: upload the phyletic pattern and the tree. Choose **outgroup rooting** (`--rooting_method outgroup --leaf NAME` on the command line; the default is midpoint). GLOOME does not filter families: all positions are used to estimate rates; CoPAP tests only variable ones.
