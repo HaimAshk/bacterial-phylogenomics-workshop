@@ -33,7 +33,7 @@ All commands for the hands-on, step by step: [handout (PDF)](../handout/handout.
 | Tool | What for | Link |
 |---|---|---|
 | skani | fast ANI and aligned fraction | https://github.com/bluenote-1577/skani |
-| PopPUNK | k-mer core/accessory distances, strain clusters | https://poppunk.net |
+| PopPUNK | k-mer core/accessory distances, strain clusters | https://github.com/bacpop/PopPUNK |
 | PanGene-O-Meter | gene-content similarity | https://github.com/HaimAshk/PanGene-O-Meter |
 | Microbializer | pangenome, species tree, annotation (web server) | https://microbializer.tau.ac.il |
 | GLOOME / CoPAP | gain and loss, co-evolution of gene families (web server) | https://gloome.tau.ac.il |

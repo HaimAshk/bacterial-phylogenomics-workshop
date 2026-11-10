@@ -50,13 +50,13 @@ Activate by path. Steps 1-4: `conda activate ./conda_envs/phylo-genomes`; steps 
 
 The tools are split because GLOOME pins `numpy<2`, which can conflict with the packages in the genome environment.
 If treeWAS reports a missing package, install it from conda (for example `conda install -c conda-forge r-adegenet r-hmisc r-seqinr r-png r-data.table`) and run the install line again. `install_git` is used instead of `install_github` because the GitHub API rate limit (60 per hour per IP address) is quickly used up on shared networks.
-Tested on a Linux server from a fresh clone: both environments, `gloome --help`, the GLOOME toy run, the treeWAS install and `run_treewas.R` on the toy data, and `phylo_plots.py`. Not yet run on the full data: the skani, PopPUNK and dRep commands, GLOOME on the Pseudomonas set, and pyseer.
+Tested on a Linux server from a fresh clone: both environments, `gloome --help`, the GLOOME toy run and the GLOOME run on the Pseudomonas set, the treeWAS install and `run_treewas.R` on the toy data, and `phylo_plots.py`. Not yet run on the full data: the skani, PopPUNK and dRep commands, and pyseer.
 
 ## Tools
 | Tool | What for | Link |
 |---|---|---|
 | skani | fast ANI and aligned fraction | https://github.com/bluenote-1577/skani |
-| PopPUNK | k-mer core/accessory distances, strain clusters | https://poppunk.net |
+| PopPUNK | k-mer core/accessory distances, strain clusters | https://github.com/bacpop/PopPUNK |
 | PanGene-O-Meter | gene-content similarity | https://github.com/HaimAshk/PanGene-O-Meter |
 | Microbializer | pangenome, species tree, annotation (web server) | https://microbializer.tau.ac.il |
 | GLOOME / CoPAP | gain and loss, co-evolution of gene families (web server) | https://gloome.tau.ac.il |
