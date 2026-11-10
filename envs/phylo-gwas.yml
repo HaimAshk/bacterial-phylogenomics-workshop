@@ -1,5 +1,5 @@
 # Environment 2: gain/loss, co-evolution and gene-content GWAS (handout steps 5-6)
-#   conda env create -f envs/phylo-gwas.yml -p ./conda_envs/phylo-gwas && conda activate ./conda_envs/phylo-gwas
+#   mamba env create -f envs/phylo-gwas.yml -p ./conda_envs/phylo-gwas && conda activate ./conda_envs/phylo-gwas
 #   Rscript -e 'remotes::install_git("https://github.com/caitiecollins/treeWAS.git", build_vignettes=FALSE)'
 # install_git, not install_github: the GitHub API rate limit (60/h per IP) is quickly used up on shared networks
 # GLOOME pins numpy<2, which is why this is a separate environment.

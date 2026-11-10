@@ -19,11 +19,12 @@ No conda yet? Install Miniforge (free, uses the conda-forge channel): https://gi
 
 ```bash
 # run from inside bacterial-phylogenomics-workshop/; -p puts each environment in a folder next to the repository files
+# mamba (installed with Miniforge) takes about a minute per environment; "conda env create" with the same arguments also works but can take over 10 minutes
 # environment 1: genome comparison (steps 1-4)
-conda env create -f envs/phylo-genomes.yml -p ./conda_envs/phylo-genomes
+mamba env create -f envs/phylo-genomes.yml -p ./conda_envs/phylo-genomes
 
 # environment 2: gain/loss, co-evolution and GWAS (steps 5-6)
-conda env create -f envs/phylo-gwas.yml -p ./conda_envs/phylo-gwas
+mamba env create -f envs/phylo-gwas.yml -p ./conda_envs/phylo-gwas
 conda activate ./conda_envs/phylo-gwas
 Rscript -e 'remotes::install_git("https://github.com/caitiecollins/treeWAS.git", build_vignettes=FALSE)'
 gloome --help       # check that command-line GLOOME runs (the web server needs no install)
