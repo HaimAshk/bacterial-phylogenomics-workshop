@@ -50,7 +50,7 @@ Activate by path. Steps 1-4: `conda activate ./conda_envs/phylo-genomes`; steps 
 
 The tools are split because GLOOME pins `numpy<2`, which can conflict with the packages in the genome environment.
 If treeWAS reports a missing package, install it from conda (for example `conda install -c conda-forge r-adegenet r-hmisc r-seqinr r-png r-data.table`) and run the install line again. `install_git` is used instead of `install_github` because the GitHub API rate limit (60 per hour per IP address) is quickly used up on shared networks.
-Tested on a Linux server from a fresh clone: both environments, `gloome --help`, the GLOOME toy run and the GLOOME run on the Pseudomonas set, the treeWAS install and `run_treewas.R` on the toy data, `phylo_plots.py`, pyseer on the toy data, and the NCBI genome download with `ncbi_metadata.sh`. Not yet run on the full data: the skani, PopPUNK and dRep commands.
+Tested on a Linux server from a fresh clone: both environments, `gloome --help`, the GLOOME toy run and the GLOOME run on the Pseudomonas set, the treeWAS install and `run_treewas.R` on the toy data, `phylo_plots.py`, pyseer on the toy data, the NCBI genome download with `ncbi_metadata.sh`, and skani, PopPUNK and dRep on the 63 genomes. Not yet run from the handout: PanGene-O-Meter.
 
 ## Tools
 | Tool | What for | Link |

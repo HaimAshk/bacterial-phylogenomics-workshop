@@ -86,7 +86,9 @@ poppunk --fit-model bgmm --ref-db pp_db --output pp_fit --K 4
 poppunk_visualise --ref-db pp_db --model-dir pp_fit --output pp_vis --microreact
 ```
 
-**dRep** clusters genomes into species- or strain-level groups (primary Mash 90%, secondary ANI 95% by default; use 98–99% for strains).
+On the 63 genomes this gives 12 clusters. To rerun `poppunk_visualise`, delete the old output folder first (`rm -rf pp_vis`) or choose a new `--output` name. A `pkg_resources` warning is harmless.
+
+**dRep** clusters genomes into species- or strain-level groups (primary clusters at 90% similarity, secondary ANI 95% by default; use 98 to 99% for strains). On the 63 genomes it finds 11 primary clusters and keeps 15 genomes at 95%.
 
 ```bash
 dRep dereplicate drep_out -g fna/*.fna -pa 0.9 -sa 0.95 -p 8 --ignoreGenomeQuality

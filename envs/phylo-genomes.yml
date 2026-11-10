@@ -8,6 +8,7 @@ dependencies:
   - python=3.11
   - skani
   - poppunk
+  - setuptools<81      # PopPUNK imports pkg_resources, removed from newer setuptools
   - drep
   - ncbi-datasets-cli
   - entrez-direct
