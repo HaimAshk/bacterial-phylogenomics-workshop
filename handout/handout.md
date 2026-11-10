@@ -58,8 +58,9 @@ find ncbi_dataset -name '*_genomic.fna' -exec cp {} fna/ \;
 ls $PWD/fna/*.fna > list.txt                    # one path per line (skani, dRep)
 wc -l list.txt                                  # expect 63
 
-# metadata: host, isolation source, country, year, assembly level
-bash ncbi_metadata.sh accessions_63.txt > metadata.tsv
+# metadata: host, isolation source, country, date, assembly level (writes metadata.tsv)
+bash ncbi_metadata.sh accessions_63.txt
+head -3 metadata.tsv
 ```
 
 Look at `metadata.tsv` before going on: the phenotype for the GWAS step (for example host plant or isolation source) comes from here.
@@ -191,17 +192,27 @@ Rscript run_treewas.R          # runs the toy example; read the script, it is sh
 
 For your own data, edit the three file names at the top of `run_treewas.R`; the matrix must be genomes × families with row names equal to the tree tips.
 
-**pyseer** corrects for population structure with a linear mixed model. It expects families in rows and genomes in columns (Rtab), so transpose first:
+**pyseer** corrects for population structure with a linear mixed model. It expects families in rows and genomes in columns (Rtab), so the matrix is transposed first. The two helper scripts `phylogeny_distance.py` and `count_patterns.py` are not installed by pip, so download them once into `work/`:
 
 ```bash
+# once: the two helper scripts (pyseer GitHub) and the tree library they need
+curl -LO https://raw.githubusercontent.com/mgalardini/pyseer/master/scripts/phylogeny_distance.py
+curl -LO https://raw.githubusercontent.com/mgalardini/pyseer/master/scripts/count_patterns.py
+python -c "import dendropy" || pip install dendropy
+
+# input files: genomes x families -> families x genomes; phenotype file with a header
 python -c "import pandas as pd; pd.read_csv('toy2_PA_matrix.tsv', sep='\t', index_col=0).T.rename_axis('Gene').to_csv('toy2.Rtab', sep='\t')"
-phylogeny_distance.py --lmm toy2_tree.nwk > phylo_dist.tsv
+cut -f1,2 toy2_trait.tsv | sed '1s/.*/samples\tphenotype/' > toy2_trait_pyseer.tsv
+
+# tree distances, the mixed-model GWAS, number of unique patterns
+python phylogeny_distance.py --lmm toy2_tree.nwk > phylo_dist.tsv
 pyseer --lmm --phenotypes toy2_trait_pyseer.tsv --pres toy2.Rtab \
        --similarity phylo_dist.tsv --output-patterns patterns.txt > gwas.txt
-count_patterns.py patterns.txt          # number of unique patterns, for the Bonferroni threshold
+python count_patterns.py patterns.txt     # prints Patterns and the Bonferroni Threshold
+head gwas.txt
 ```
 
-`toy2_trait_pyseer.tsv` = two columns, `samples` and the phenotype, with a header line (take them from `toy2_trait.tsv`). Compare the hits with `toy2_truth.tsv`, which lists the families that really carry the signal, and ask: which method finds them, and which ones are false positives from population structure?
+`toy2_trait_pyseer.tsv` has two columns, `samples` and the phenotype, with a header line; the `cut` and `sed` line above builds it from `toy2_trait.tsv`. In `gwas.txt` read the `lrt-pvalue` column and compare it with the threshold printed by `count_patterns.py` (the notes column may say `bad-chisq` for rare families; that is common). Compare the hits with `toy2_truth.tsv`, which lists the families that really carry the signal, and ask: which method finds them, and which ones are false positives from population structure?
 
 ## Things to explore
 
