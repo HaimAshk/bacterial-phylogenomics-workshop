@@ -8,7 +8,7 @@
 ```bash
 # run from inside the repository folder (bacterial-phylogenomics-workshop/)
 conda activate ./conda_envs/phylo-gwas
-Rscript -e 'remotes::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)'
+Rscript -e 'remotes::install_git("https://github.com/caitiecollins/treeWAS.git", build_vignettes=FALSE)'
 gloome --help
 ```
 

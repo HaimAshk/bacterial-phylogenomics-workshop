@@ -36,7 +36,7 @@ The slides will be uploaded here after the workshop.
 ```bash
 # run from inside the repository folder (bacterial-phylogenomics-workshop/)
 conda activate ./conda_envs/phylo-gwas
-Rscript -e 'remotes::install_github("caitiecollins/treeWAS", build_vignettes=FALSE)'
+Rscript -e 'remotes::install_git("https://github.com/caitiecollins/treeWAS.git", build_vignettes=FALSE)'
 gloome --help
 ```
 
@@ -44,7 +44,8 @@ Activate by path. Steps 1-4: `conda activate ./conda_envs/phylo-genomes`; steps 
 `-p` puts the environments in a `conda_envs/` folder next to the repository files (useful when your home directory is small). Without `-p`, `conda env create -f envs/phylo-gwas.yml` creates a named environment instead, and `conda activate phylo-gwas` works.
 
 The tools are split because GLOOME pins `numpy<2`, which can conflict with the packages in the genome environment.
-Not tested together on a clean machine yet: run the `conda env create` lines before the workshop.
+If treeWAS reports a missing package, install it from conda (for example `conda install -c conda-forge r-adegenet r-hmisc r-seqinr r-png r-data.table`) and run the install line again. `install_git` is used instead of `install_github` because the GitHub API rate limit (60 per hour per IP address) is quickly used up on shared networks.
+Tested on a Linux server: the `phylo-gwas` environment, `gloome --help`, treeWAS install and `run_treewas.R` on the toy data. Not tested together on a clean machine yet: run the `conda env create` lines before the workshop.
 
 ## Tools
 | Tool | What for | Link |
