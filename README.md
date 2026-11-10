@@ -89,7 +89,6 @@ Genome sequences are not included: download them from NCBI with the accessions (
 ## Citation and reuse
 Please **cite the tools you use**, listed under References below (PanGene-O-Meter, Microbializer, GLOOME/CoPAP, skani, PopPUNK, dRep, treeWAS, pyseer). If you use this material in a course or talk, cite this workshop (Ashkenazy, TRR356 workshop "Bacterial phylogenomics", year, repository URL) and keep the credits below.
 The slides and figures are CC BY 4.0, so attribution is required. I would also appreciate a short e-mail when you reuse them. This is a request, not a licence condition.
-PanGene-O-Meter is described in a bioRxiv preprint (link to be added); the code is on GitHub (link to be added).
 
 ## Acknowledgements
 Part 2 motivation slides (lateral gene transfer, gain and loss, the Markov model) are adapted from lecture material by Tal Pupko (Tel Aviv University); GLOOME and Microbializer are from his lab. Thanks to the Weigel department and TRR356.
