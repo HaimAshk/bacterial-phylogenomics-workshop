@@ -1,6 +1,6 @@
 # Bacterial phylogenomics: from core-genome to gene-content variation
 
-**TRR356 workshop for plant–microbe PhD students** · [DATE], online · Haim Ashkenazy, Department of Molecular Biology (Weigel), MPI for Biology Tübingen
+**TRR356 workshop for plant–microbe PhD students** · Tuesday 10 November 2026, online · Haim Ashkenazy, Department of Molecular Biology (Weigel), MPI for Biology Tübingen
 
 ![Phyletic pattern of 63 Pseudomonas genomes next to their species tree](docs/pa_tree_heatmap.png)
 
@@ -11,18 +11,20 @@ Two genomes can be 99.9% identical by ANI and still share only 70% of their gene
 two lenses, **sequence identity** and **gene content**, and ask how gene families are gained and lost along a tree,
 which ones co-evolve, and which ones track a trait.
 
-## Programme ([TIMES TO CONFIRM])
+## Programme (Tuesday 10 November 2026, Berlin time)
 | Time | Block | Content |
 |---|---|---|
-| 09:00 | **Part 1** (75 min) | Pangenome concept · ANI and skani · PopPUNK · gene-content similarity (PanGene-O-Meter) · Microbializer |
-| 10:15 | Break | |
-| 10:35 | **Part 2** (85 min) | Phyletic patterns · gain and loss (GLOOME) · co-evolution (CoPAP) · gene-content GWAS (treeWAS, pyseer) |
-| 12:00–14:30 | Break | |
-| 14:30 | **Hands-on and consultation** | Your own genomes or the *Pseudomonas* set |
+| 09:20 | Zoom opens | |
+| 09:30 | **Part 1** (65 min) | Pangenome concept · ANI and skani · PopPUNK · gene-content similarity (PanGene-O-Meter) · Microbializer |
+| 10:35 | Short break | |
+| 10:50 | **Part 2** (70 min) | Phyletic patterns · gain and loss (GLOOME) · co-evolution (CoPAP) · gene-content GWAS (treeWAS, pyseer) |
+| 12:00–14:30 | Lunch break and TRR seminar | |
+| 14:30–16:30 | **Hands-on and consultation** | Your own genomes or the *Pseudomonas* set |
 
 ## Slides
-- Part 1: pangenomes, genome similarity and gene content: [PDF](slides/) *(add link)*
-- Part 2: gain and loss, co-evolution and gene-content GWAS: [PDF](slides/) *(add link)*
+The slides will be uploaded here after the workshop.
+- Part 1: pangenomes, genome similarity and gene content
+- Part 2: gain and loss, co-evolution and gene-content GWAS
 
 ## Tools
 | Tool | What for | Link |
@@ -62,11 +64,11 @@ Genome sequences are not included: download them from NCBI with the accessions (
 `my_treewas_reimplementation.py` (a simplified teaching re-implementation, **not** the treeWAS package)
 
 ## References
-- Ashkenazy and Weigel (2025) PanGene-O-Meter.
-- Shimony et al. (2025) Nucleic Acids Res 53:W369 (Microbializer).
-- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME); Cohen and Pupko (2010) Mol Biol Evol 27:703.
-- Shaw and Yu (2023) Nat Methods 20:1661 (skani); Lees et al. (2019) Genome Res 29:304 (PopPUNK); Olm et al. (2017) ISME J 11:2864 (dRep).
-- Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS); Lees et al. (2018) Bioinformatics 34:4310 (pyseer).
+- Ashkenazy and Weigel (2025) PanGene-O-Meter: intra-species diversity based on gene content. [bioRxiv preprint](https://doi.org/10.1101/2025.09.01.673544).
+- Shimony et al. (2025) Nucleic Acids Res 53:W369 (Microbializer 2.0). [PubMed](https://pubmed.ncbi.nlm.nih.gov/40366021/)
+- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME). [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=10.1093/bioinformatics/btq549); Cohen and Pupko (2010) Mol Biol Evol 27:703. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19808865/)
+- Shaw and Yu (2023) Nat Methods 20:1661 (skani). [PubMed](https://pubmed.ncbi.nlm.nih.gov/37735570/); Lees et al. (2019) Genome Res 29:304 (PopPUNK). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30679308/); Olm et al. (2017) ISME J 11:2864 (dRep). [PubMed](https://pubmed.ncbi.nlm.nih.gov/28742071/)
+- Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS). [PubMed](https://pubmed.ncbi.nlm.nih.gov/29401456/); Lees et al. (2018) Bioinformatics 34:4310 (pyseer). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30535304/)
 
 ## Licence
 Code: MIT. Slides and figures: CC BY 4.0. See `LICENSE`.
