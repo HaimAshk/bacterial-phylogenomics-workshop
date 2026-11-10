@@ -128,10 +128,13 @@ Run it on the phyletic pattern (from `work/`, using the full path to the script;
 ```bash
 perl /full/path/to/PanGene-O-Meter/PanGeneOmeter/PanGeneOmeter.pl \
      --phyletic_pattern_file pseudomonas_phyletic_pattern_ALL.fas \
-     --outDir pgom_pseudomonas --threads 4
+     --outDir $PWD/pgom_pseudomonas --threads 4
+ls pgom_pseudomonas
 ```
 
 The output directory has the pairwise gene-content distances, the clusters and the representatives. Genomes are renamed to S1 ... SN during the run and renamed back in the result tables (`genome_names.map.txt` has the mapping). The matrix format is detected automatically (Microbializer `phyletic_patterns.fas`, Panaroo or Roary Rtab, or a `*.01.csv`); it needs at least 2 genomes and only 0/1 values. Other inputs: GenBank files (`--in_gbk_list_file`) or genome FASTA files (`--in_genome_list_file list --input_type fna`, genes predicted with pyrodigal). Use the DIAMOND version that comes with the environment: v2.1.24 and v2.1.25 do not work at the moment.
+
+On the Pseudomonas pattern (63 genomes, 26,703 families) the run takes about 20 seconds and, with the default GCSj cutoff of 0.9, makes 58 clusters, so only a few genomes are similar enough in gene content to be merged. Start with `InputMatrix.All_vs_All...all_pairs.csv` (pairwise distances), `InputMatrix.GCSj.90.clstr.txt` (clusters) and `InputMatrix.GCSj.90.representative_names`.
 
 Check the numbers against the example: 63 genomes, 26,703 families, 2,362 core (all 63), 12,536 singletons, 11,805 variable (2–62 genomes).
 
