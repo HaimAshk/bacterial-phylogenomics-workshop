@@ -95,7 +95,7 @@ The Microbializer outputs used by the plots (`orthogroups_annotated.csv`, `ani_p
 ## References
 - Ashkenazy and Weigel (2025) PanGene-O-Meter: intra-species diversity based on gene content. [bioRxiv preprint](https://doi.org/10.1101/2025.09.01.673544).
 - Shimony et al. (2025) Nucleic Acids Res 53:W369 (Microbializer 2.0). [PubMed](https://pubmed.ncbi.nlm.nih.gov/40366021/)
-- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME). [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=10.1093/bioinformatics/btq549); Cohen and Pupko (2010) Mol Biol Evol 27:703. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19808865/)
+- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME). [PubMed](https://pubmed.ncbi.nlm.nih.gov/20876605/); Cohen and Pupko (2010) Mol Biol Evol 27:703. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19808865/)
 - Shaw and Yu (2023) Nat Methods 20:1661 (skani). [PubMed](https://pubmed.ncbi.nlm.nih.gov/37735570/); Lees et al. (2019) Genome Res 29:304 (PopPUNK). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30679308/); Olm et al. (2017) ISME J 11:2864 (dRep). [PubMed](https://pubmed.ncbi.nlm.nih.gov/28742071/)
 - Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS). [PubMed](https://pubmed.ncbi.nlm.nih.gov/29401456/); Lees et al. (2018) Bioinformatics 34:4310 (pyseer). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30535304/)
 
@@ -104,7 +104,7 @@ Please **cite the tools you use**, listed under References above (PanGene-O-Mete
 The slides and figures are CC BY 4.0, so attribution is required. I would also appreciate a short e-mail when you reuse them. This is a request, not a licence condition.
 
 ## Acknowledgements
-Part 2 motivation slides (lateral gene transfer, gain and loss, the Markov model) are adapted from lecture material by Prof. Tal Pupko (Tel Aviv University); GLOOME and Microbializer are from his lab ([Pupko lab](https://www.tau.ac.il/~talp/)). Thanks to the Weigel department ([Weigelworld](https://weigelworld.org/)) and TRR356.
+Part 2 motivation slides (lateral gene transfer, gain and loss, the Markov model) are adapted from lecture material by Prof. Tal Pupko (Tel Aviv University); GLOOME and Microbializer are from his lab ([Pupko lab](https://www.tau.ac.il/~talp/)). Thanks to the Weigel department ([Weigelworld](https://weigelworld.org/)) and [TRR356](https://www.bio.lmu.de/en/research/collaborative-projects/trr-356-plantmicrobe/).
 
 ## Licence
 Code: MIT. Slides and figures: CC BY 4.0. See `LICENSE`.
