@@ -95,9 +95,14 @@ The Microbializer outputs used by the plots (`orthogroups_annotated.csv`, `ani_p
 ## References
 - Ashkenazy and Weigel (2025) PanGene-O-Meter: intra-species diversity based on gene content. [bioRxiv preprint](https://doi.org/10.1101/2025.09.01.673544).
 - Shimony et al. (2025) Nucleic Acids Res 53:W369 (Microbializer 2.0). [PubMed](https://pubmed.ncbi.nlm.nih.gov/40366021/)
-- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME). [PubMed](https://pubmed.ncbi.nlm.nih.gov/20876605/); Cohen and Pupko (2010) Mol Biol Evol 27:703. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19808865/); Cohen, Ashkenazy, Burstein and Pupko (2012) Bioinformatics 28:i389 (CoPAP). [PubMed](https://pubmed.ncbi.nlm.nih.gov/22962457/)
-- Shaw and Yu (2023) Nat Methods 20:1661 (skani). [PubMed](https://pubmed.ncbi.nlm.nih.gov/37735570/); Lees et al. (2019) Genome Res 29:304 (PopPUNK). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30679308/); Olm et al. (2017) ISME J 11:2864 (dRep). [PubMed](https://pubmed.ncbi.nlm.nih.gov/28742071/)
-- Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS). [PubMed](https://pubmed.ncbi.nlm.nih.gov/29401456/); Lees et al. (2018) Bioinformatics 34:4310 (pyseer). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30535304/)
+- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME). [PubMed](https://pubmed.ncbi.nlm.nih.gov/20876605/)
+- Cohen and Pupko (2010) Mol Biol Evol 27:703 (gain and loss models, stochastic mapping). [PubMed](https://pubmed.ncbi.nlm.nih.gov/19808865/)
+- Cohen, Ashkenazy, Burstein and Pupko (2012) Bioinformatics 28:i389 (CoPAP). [PubMed](https://pubmed.ncbi.nlm.nih.gov/22962457/)
+- Shaw and Yu (2023) Nat Methods 20:1661 (skani). [PubMed](https://pubmed.ncbi.nlm.nih.gov/37735570/)
+- Lees et al. (2019) Genome Res 29:304 (PopPUNK). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30679308/)
+- Olm et al. (2017) ISME J 11:2864 (dRep). [PubMed](https://pubmed.ncbi.nlm.nih.gov/28742071/)
+- Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS). [PubMed](https://pubmed.ncbi.nlm.nih.gov/29401456/)
+- Lees et al. (2018) Bioinformatics 34:4310 (pyseer). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30535304/)
 
 ## Citation and reuse
 Please **cite the tools you use**, listed under References above (PanGene-O-Meter, Microbializer, GLOOME/CoPAP, skani, PopPUNK, dRep, treeWAS, pyseer). If you use this material in a course or talk, cite this workshop (Ashkenazy, TRR356 workshop "Bacterial phylogenomics", year, repository URL) and keep the credits below.
