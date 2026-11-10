@@ -91,7 +91,7 @@ Please **cite the tools you use**, listed under References below (PanGene-O-Mete
 The slides and figures are CC BY 4.0, so attribution is required. I would also appreciate a short e-mail when you reuse them. This is a request, not a licence condition.
 
 ## Acknowledgements
-Part 2 motivation slides (lateral gene transfer, gain and loss, the Markov model) are adapted from lecture material by Tal Pupko (Tel Aviv University); GLOOME and Microbializer are from his lab. Thanks to the Weigel department and TRR356.
+Part 2 motivation slides (lateral gene transfer, gain and loss, the Markov model) are adapted from lecture material by Prof. Tal Pupko (Tel Aviv University); GLOOME and Microbializer are from his lab ([Pupko lab](https://www.tau.ac.il/~talp/)). Thanks to the Weigel department ([Weigelworld](https://weigelworld.org/)) and TRR356.
 
 ## Licence
 Code: MIT. Slides and figures: CC BY 4.0. See `LICENSE`.
