@@ -47,7 +47,7 @@ Not tested together on a clean machine yet: run the `conda env create` lines bef
 |---|---|---|
 | skani | fast ANI and aligned fraction | https://github.com/bluenote-1577/skani |
 | PopPUNK | k-mer core/accessory distances, strain clusters | https://poppunk.net |
-| PanGene-O-Meter | gene-content similarity | *(add link)* |
+| PanGene-O-Meter | gene-content similarity | https://github.com/HaimAshk/PanGene-O-Meter |
 | Microbializer | pangenome, species tree, annotation (web server) | https://microbializer.tau.ac.il |
 | GLOOME / CoPAP | gain and loss, co-evolution of gene families (web server) | https://gloome.tau.ac.il |
 | treeWAS | gene-content association with a trait, tree-aware | https://github.com/caitiecollins/treeWAS |
