@@ -71,11 +71,12 @@ linked, which are decoys).
 | `accessions_63.txt`, `genome_set.tsv` | NCBI accessions and genome list |
 | `pseudomonas_tree_for_gloome.nwk` | Microbializer species tree, rooted on the outgroup, support values removed |
 | `pseudomonas_phyletic_pattern_ALL.fas` | all 26,703 orthogroups as 0/1: **use this for GLOOME** |
+| `orthogroups_annotated.csv`, `ani_pairwise_values.csv`, `final_species_tree.newick` | Microbializer outputs (orthogroups, pairwise ANI, species tree) used by `phylo_plots.py` |
 | `pseudomonas_phyletic_pattern.fas`, `*_positions.tsv` | the 11,805 variable families only (2–62 genomes), with their orthogroup names |
 
 Genome sequences are not included: download them from NCBI with the accessions (see `scripts/ncbi_metadata.sh`).
 
-The **full Microbializer results** for this dataset (about 400 MB zip) are on Keeper: [download](https://keeper.mpdl.mpg.de/seafhttp/f/d7752012736949e4b776/?op=view). *This link expires on about 8 February 2027. After that you can rerun Microbializer yourself with the accessions above, or contact me.*
+The Microbializer outputs used by the plots (`orthogroups_annotated.csv`, `ani_pairwise_values.csv`, `final_species_tree.newick`) are in `data/pseudomonas/`. The **full Microbializer results** (about 400 MB, a `.tar.gz`) are optional, on Keeper: [download](https://keeper.mpdl.mpg.de/seafhttp/f/d7752012736949e4b776/?op=view). Extract inside `work/`: `mkdir -p microbializer_results && tar -xzf microbializer_results.tar.gz -C microbializer_results`. *The Keeper link expires on about 8 February 2027; after that you can rerun Microbializer yourself with the accessions above, or contact me.*
 
 ## Hands-on in short
 1. **Microbializer**: upload a zip of genomes (`scripts/make_microbializer_zip.sh`), set the outgroup, download tree and phyletic pattern.
