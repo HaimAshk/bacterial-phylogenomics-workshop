@@ -25,11 +25,13 @@ which ones co-evolve, and which ones track a trait.
 All commands for the hands-on, step by step: [handout (PDF)](handout/handout.pdf) or [handout (Markdown)](handout/handout.md).
 
 ## Slides
-The slides will be uploaded here after the workshop.
-- Part 1: pangenomes, genome similarity and gene content
-- Part 2: gain and loss, co-evolution and gene-content GWAS
+- [Part 1: pangenomes, genome similarity and gene content](slides/Bacterial_phylogenomics_Part_1.pdf)
+- [Part 2: gain and loss, co-evolution and gene-content GWAS](slides/Bacterial_phylogenomics_Part_2.pdf)
+- [Hands-on session](slides/Bacterial_phylogenomics_Hands_On.pdf)
 
 ## Two conda environments
+
+No conda yet? Install [Miniforge](https://github.com/conda-forge/miniforge) (free, uses the conda-forge channel). After installing, open a new terminal; if `conda` is still not found, run `conda init` from the install folder (for example `~/miniforge3/bin/conda init`) and open a new terminal again. On Windows, use WSL (Ubuntu).
 
 | Environment | Used for | Create |
 |---|---|---|

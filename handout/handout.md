@@ -15,6 +15,8 @@ cd bacterial-phylogenomics-workshop     # the folder git just created; paths bel
 ls                                      # README.md  data/  envs/  scripts/  slides/
 ```
 
+No conda yet? Install Miniforge (free, uses the conda-forge channel): https://github.com/conda-forge/miniforge . After installing, open a new terminal. If `conda` is still not found, run `conda init` from the install folder (for example `~/miniforge3/bin/conda init`) and open a new terminal again. On Windows, use WSL (Ubuntu) and install Miniforge inside it.
+
 ```bash
 # run from inside bacterial-phylogenomics-workshop/; -p puts each environment in a folder next to the repository files
 # environment 1: genome comparison (steps 1-4)
@@ -200,5 +202,15 @@ count_patterns.py patterns.txt          # number of unique patterns, for the Bon
 ```
 
 `toy2_trait_pyseer.tsv` = two columns, `samples` and the phenotype, with a header line (take them from `toy2_trait.tsv`). Compare the hits with `toy2_truth.tsv`, which lists the families that really carry the signal, and ask: which method finds them, and which ones are false positives from population structure?
+
+## Things to explore
+
+Pick any of these, in any order. Work in `work/` and bring questions or error messages to the group.
+
+- **Homoplasy:** which families are scattered across the tree, and which follow the clades? Use `ParsimonyAndHomoplasyScores.tsv` from the GLOOME Pseudomonas run and `tree_matrix.png`.
+- **Gains and losses:** on which branches do gains and losses cluster? Start with `Branches.tsv` and `BranchPositionProbabilities.tsv`, and the rate parameters in `TreeAttributes.tsv`.
+- **Toy example:** which method finds the planted families, and which hits are decoys? Compare the treeWAS hits with `toy2_truth.tsv`.
+- **Genome pairs:** which pairs have high ANI but very different gene content? Use `gcs_vs_ani.png`.
+- **Your own data:** put your genomes in `fna/` and follow steps 1 to 5.
 
 If a command fails, run it with `--help` first; tool options change between versions. Bring the error message, not a description of it.
