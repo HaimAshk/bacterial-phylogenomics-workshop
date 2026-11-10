@@ -1,5 +1,5 @@
 # Environment 1: genome comparison (handout steps 1-4)
-#   conda env create -f envs/phylo-genomes.yml && conda activate phylo-genomes
+#   conda env create -f envs/phylo-genomes.yml -p ./conda_envs/phylo-genomes && conda activate ./conda_envs/phylo-genomes
 name: phylo-genomes
 channels:
   - conda-forge
