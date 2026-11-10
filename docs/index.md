@@ -21,6 +21,9 @@ which ones co-evolve, and which ones track a trait.
 | 12:00–14:30 | Lunch break and TRR seminar | |
 | 14:30–16:30 | **Hands-on and consultation** | Your own genomes or the *Pseudomonas* set |
 
+## Handout
+All commands for the hands-on, step by step: [handout (PDF)](../handout/handout.pdf) or [handout (Markdown)](../handout/handout.md).
+
 ## Slides
 The slides will be uploaded here after the workshop.
 - Part 1: pangenomes, genome similarity and gene content

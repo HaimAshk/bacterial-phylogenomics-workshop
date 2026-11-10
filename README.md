@@ -21,6 +21,9 @@ which ones co-evolve, and which ones track a trait.
 | 12:00–14:30 | Lunch break and TRR seminar | |
 | 14:30–16:30 | **Hands-on and consultation** | Your own genomes or the *Pseudomonas* set |
 
+## Handout
+All commands for the hands-on, step by step: [handout (PDF)](handout/handout.pdf) or [handout (Markdown)](handout/handout.md).
+
 ## Slides
 The slides will be uploaded here after the workshop.
 - Part 1: pangenomes, genome similarity and gene content
@@ -45,7 +48,7 @@ Activate by path. Steps 1-4: `conda activate ./conda_envs/phylo-genomes`; steps 
 
 The tools are split because GLOOME pins `numpy<2`, which can conflict with the packages in the genome environment.
 If treeWAS reports a missing package, install it from conda (for example `conda install -c conda-forge r-adegenet r-hmisc r-seqinr r-png r-data.table`) and run the install line again. `install_git` is used instead of `install_github` because the GitHub API rate limit (60 per hour per IP address) is quickly used up on shared networks.
-Tested on a Linux server: the `phylo-gwas` environment, `gloome --help`, treeWAS install and `run_treewas.R` on the toy data. Not tested together on a clean machine yet: run the `conda env create` lines before the workshop.
+Tested on a Linux server from a fresh clone: both environments, `gloome --help`, the GLOOME toy run, the treeWAS install and `run_treewas.R` on the toy data, and `phylo_plots.py`. Not yet run on the full data: the skani, PopPUNK and dRep commands, GLOOME on the Pseudomonas set, and pyseer.
 
 ## Tools
 | Tool | What for | Link |
@@ -80,7 +83,7 @@ The Microbializer outputs used by the plots (`orthogroups_annotated.csv`, `ani_p
 
 ## Hands-on in short
 1. **Microbializer**: upload a zip of genomes (`scripts/make_microbializer_zip.sh`), set the outgroup, download tree and phyletic pattern.
-2. **GLOOME / CoPAP**: upload the phyletic pattern and the tree. Choose **outgroup rooting** (`--rooting_method outgroup --leaf NAME` on the command line; the default is midpoint). GLOOME does not filter families: all positions are used to estimate rates; CoPAP tests only variable ones.
+2. **GLOOME / CoPAP**: upload the phyletic pattern and the tree. Choose **outgroup rooting** (`--rooting_method outgroup --leaf NAME` on the command line; the default is midpoint). GLOOME does not filter families: all positions are used to estimate rates; CoPAP tests only variable ones and is heavy, so it is run on the toy example only (`--is_do_not_use_copap 1` switches it off for the Pseudomonas set).
 3. **treeWAS / pyseer**: associate gene presence/absence with a trait (`scripts/run_treewas.R`).
 
 ## Scripts
@@ -95,7 +98,7 @@ The Microbializer outputs used by the plots (`orthogroups_annotated.csv`, `ani_p
 - Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS). [PubMed](https://pubmed.ncbi.nlm.nih.gov/29401456/); Lees et al. (2018) Bioinformatics 34:4310 (pyseer). [PubMed](https://pubmed.ncbi.nlm.nih.gov/30535304/)
 
 ## Citation and reuse
-Please **cite the tools you use**, listed under References below (PanGene-O-Meter, Microbializer, GLOOME/CoPAP, skani, PopPUNK, dRep, treeWAS, pyseer). If you use this material in a course or talk, cite this workshop (Ashkenazy, TRR356 workshop "Bacterial phylogenomics", year, repository URL) and keep the credits below.
+Please **cite the tools you use**, listed under References above (PanGene-O-Meter, Microbializer, GLOOME/CoPAP, skani, PopPUNK, dRep, treeWAS, pyseer). If you use this material in a course or talk, cite this workshop (Ashkenazy, TRR356 workshop "Bacterial phylogenomics", year, repository URL) and keep the credits below.
 The slides and figures are CC BY 4.0, so attribution is required. I would also appreciate a short e-mail when you reuse them. This is a request, not a licence condition.
 
 ## Acknowledgements
