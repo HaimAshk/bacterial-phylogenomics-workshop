@@ -2,7 +2,7 @@
 
 **TRR356 workshop for plant–microbe PhD students** · Tuesday 10 November 2026, online · Haim Ashkenazy, Department of Molecular Biology (Weigel), MPI for Biology Tübingen
 
-![Phyletic pattern of 63 Pseudomonas genomes next to their species tree](docs/pa_tree_heatmap.png)
+![Phyletic pattern of 63 Pseudomonas genomes next to their species tree](pa_tree_heatmap.png)
 
 *63 *Pseudomonas* genomes: species tree (left) and gene presence/absence of 11,805 variable gene families (right).*
 
