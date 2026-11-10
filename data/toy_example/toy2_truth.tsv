@@ -1,0 +1,61 @@
+pos	orthogroup	true_group	role	n_present	true_gains	true_losses	planted_events
+0	OG0001	M1	module_M1	14	6	0	A.s1:gain;B.p2:gain;C.s2:gain;D.p1:gain;B8:gain;D8:gain
+1	OG0002	decoyA	decoy_cladeA	10	2	0	A:gain
+2	OG0003	decoyCD	decoy_cladesCD	16	2	1	CD:gain
+3	OG0004	bg	background	16	10	6	
+4	OG0005	bg	background	17	4	4	
+5	OG0006	bg	background	6	3	1	
+6	OG0007	bg	background	13	5	0	
+7	OG0008	decoyCD	decoy_cladesCD	15	2	2	CD:gain
+8	OG0009	decoyA	decoy_cladeA	9	2	0	A:gain
+9	OG0010	bg	background	11	8	4	
+10	OG0011	decoyA	decoy_cladeA	8	1	0	A:gain
+11	OG0012	decoyCD	decoy_cladesCD	14	1	1	CD:gain
+12	OG0013	decoyA	decoy_cladeA	9	2	0	A:gain
+13	OG0014	decoyCD	decoy_cladesCD	23	3	2	CD:gain
+14	OG0015	bg	background	17	6	3	
+15	OG0016	bg	background	13	1	5	
+16	OG0017	M2	module_M2	9	5	0	A.p3:gain;B.p3:gain;C.p1:gain;D.p3:gain;A8:gain
+17	OG0018	decoyA	decoy_cladeA	2	3	1	A:gain
+18	OG0019	decoyA	decoy_cladeA	8	1	0	A:gain
+19	OG0020	M2	module_M2	7	5	1	A.p3:gain;B.p3:gain;C.p1:gain;D.p3:gain;A8:gain
+20	OG0021	bg	background	13	9	6	
+21	OG0022	decoyA	decoy_cladeA	13	5	0	A:gain
+22	OG0023	bg	background	13	7	2	
+23	OG0024	decoyCD	decoy_cladesCD	16	2	1	CD:gain
+24	OG0025	bg	background	31	1	1	
+25	OG0026	decoyA	decoy_cladeA	9	2	1	A:gain
+26	OG0027	bg	background	31	1	2	
+27	OG0028	M2	module_M2	9	6	1	A.p3:gain;B.p3:gain;C.p1:gain;D.p3:gain;A8:gain;B6:loss
+28	OG0029	bg	background	1	1	0	
+29	OG0030	bg	background	1	1	0	
+30	OG0031	bg	background	24	1	8	
+31	OG0032	bg	background	28	1	4	
+32	OG0033	M1	module_M1	12	6	2	A.s1:gain;B.p2:gain;C.s2:gain;D.p1:gain;B8:gain;D8:gain;C7:loss
+33	OG0034	bg	background	11	6	1	
+34	OG0035	bg	background	25	3	3	
+35	OG0036	bg	background	15	5	3	
+36	OG0037	bg	background	9	4	1	
+37	OG0038	bg	background	12	9	2	
+38	OG0039	M1	module_M1	14	6	0	A.s1:gain;B.p2:gain;C.s2:gain;D.p1:gain;B8:gain;D8:gain
+39	OG0040	bg	background	3	2	0	
+40	OG0041	M1	module_M1	14	6	0	A.s1:gain;B.p2:gain;C.s2:gain;D.p1:gain;B8:gain;D8:gain
+41	OG0042	bg	background	24	0	4	
+42	OG0043	bg	background	2	1	0	
+43	OG0044	bg	background	16	6	4	
+44	OG0045	bg	background	7	3	1	
+45	OG0046	bg	background	8	5	0	
+46	OG0047	bg	background	17	2	4	
+47	OG0048	bg	background	14	3	4	
+48	OG0049	bg	background	26	3	8	
+49	OG0050	bg	background	23	0	2	
+50	OG0051	bg	background	4	2	0	
+51	OG0052	bg	background	27	0	2	
+52	OG0053	bg	background	30	1	2	
+53	OG0054	bg	background	7	1	1	
+54	OG0055	M2	module_M2	9	5	0	A.p3:gain;B.p3:gain;C.p1:gain;D.p3:gain;A8:gain
+55	OG0056	bg	background	8	6	0	
+56	OG0057	decoyCD	decoy_cladesCD	17	2	1	CD:gain
+57	OG0058	bg	background	2	2	0	
+58	OG0059	M1	module_M1	13	6	1	A.s1:gain;B.p2:gain;C.s2:gain;D.p1:gain;B8:gain;D8:gain;A3:loss
+59	OG0060	bg	background	31	0	1	

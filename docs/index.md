@@ -1,0 +1,75 @@
+# Bacterial phylogenomics: from core-genome to gene-content variation
+
+**TRR356 workshop for plant–microbe PhD students** · [DATE], online · Haim Ashkenazy, Department of Molecular Biology (Weigel), MPI for Biology Tübingen
+
+![Phyletic pattern of 63 Pseudomonas genomes next to their species tree](docs/pa_tree_heatmap.png)
+
+*63 *Pseudomonas* genomes: species tree (left) and gene presence/absence of 11,805 variable gene families (right).*
+
+## What this workshop is about
+Two genomes can be 99.9% identical by ANI and still share only 70% of their genes. We look at bacteria through
+two lenses, **sequence identity** and **gene content**, and ask how gene families are gained and lost along a tree,
+which ones co-evolve, and which ones track a trait.
+
+## Programme ([TIMES TO CONFIRM])
+| Time | Block | Content |
+|---|---|---|
+| 09:00 | **Part 1** (75 min) | Pangenome concept · ANI and skani · PopPUNK · gene-content similarity (PanGene-O-Meter) · Microbializer |
+| 10:15 | Break | |
+| 10:35 | **Part 2** (85 min) | Phyletic patterns · gain and loss (GLOOME) · co-evolution (CoPAP) · gene-content GWAS (treeWAS, pyseer) |
+| 12:00–14:30 | Break | |
+| 14:30 | **Hands-on and consultation** | Your own genomes or the *Pseudomonas* set |
+
+## Slides
+- Part 1: pangenomes, genome similarity and gene content: [PDF](slides/) *(add link)*
+- Part 2: gain and loss, co-evolution and gene-content GWAS: [PDF](slides/) *(add link)*
+
+## Tools
+| Tool | What for | Link |
+|---|---|---|
+| skani | fast ANI and aligned fraction | https://github.com/bluenote-1577/skani |
+| PopPUNK | k-mer core/accessory distances, strain clusters | https://poppunk.net |
+| PanGene-O-Meter | gene-content similarity | *(add link)* |
+| Microbializer | pangenome, species tree, annotation (web server) | https://microbializer.tau.ac.il |
+| GLOOME / CoPAP | gain and loss, co-evolution of gene families (web server) | https://gloome.tau.ac.il |
+| treeWAS | gene-content association with a trait, tree-aware | https://github.com/caitiecollins/treeWAS |
+| pyseer | bacterial GWAS (genes, unitigs, k-mers) | https://github.com/mgalardini/pyseer |
+| dRep | genome dereplication by ANI | https://github.com/MrOlm/drep |
+
+## Data
+### `data/toy_example/`: simulated, 32 genomes × 60 gene families
+Used in Part 2 to show every number: `toy2_tree.nwk` (tree), `toy2_PA_matrix.tsv` and `toy2_phyletic_pattern.fas`
+(presence/absence), `toy2_trait.tsv` (fake pathogen/commensal trait), `toy2_truth.tsv` (which families are truly
+linked, which are decoys).
+
+### `data/pseudomonas/`: real, 63 *P. syringae* genomes plus a *P. fluorescens* outgroup
+| File | Content |
+|---|---|
+| `accessions_63.txt`, `genome_set.tsv` | NCBI accessions and genome list |
+| `pseudomonas_tree_for_gloome.nwk` | Microbializer species tree, rooted on the outgroup, support values removed |
+| `pseudomonas_phyletic_pattern_ALL.fas` | all 26,703 orthogroups as 0/1: **use this for GLOOME** |
+| `pseudomonas_phyletic_pattern.fas`, `*_positions.tsv` | the 11,805 variable families only (2–62 genomes), with their orthogroup names |
+
+Genome sequences are not included: download them from NCBI with the accessions (see `scripts/ncbi_metadata.sh`).
+
+## Hands-on in short
+1. **Microbializer**: upload a zip of genomes (`scripts/make_microbializer_zip.sh`), set the outgroup, download tree and phyletic pattern.
+2. **GLOOME / CoPAP**: upload the phyletic pattern and the tree. Choose **outgroup rooting** (`--rooting_method outgroup --leaf NAME` on the command line; the default is midpoint). GLOOME does not filter families: all positions are used to estimate rates; CoPAP tests only variable ones.
+3. **treeWAS / pyseer**: associate gene presence/absence with a trait (`scripts/run_treewas.R`).
+
+## Scripts
+`make_microbializer_zip.sh` · `filter_phyletic_pattern.py` · `ncbi_metadata.sh` · `run_treewas.R` · `copap_modules.R` ·
+`my_treewas_reimplementation.py` (a simplified teaching re-implementation, **not** the treeWAS package)
+
+## References
+- Ashkenazy and Weigel (2025) PanGene-O-Meter.
+- Shimony et al. (2025) Nucleic Acids Res 53:W369 (Microbializer).
+- Cohen et al. (2010) Bioinformatics 26:2914 (GLOOME); Cohen and Pupko (2010) Mol Biol Evol 27:703.
+- Shaw and Yu (2023) Nat Methods 20:1661 (skani); Lees et al. (2019) Genome Res 29:304 (PopPUNK); Olm et al. (2017) ISME J 11:2864 (dRep).
+- Collins and Didelot (2018) PLoS Comput Biol 14:e1005958 (treeWAS); Lees et al. (2018) Bioinformatics 34:4310 (pyseer).
+
+## Licence
+Code: MIT. Slides and figures: CC BY 4.0. See `LICENSE`.
+
+## Contact
+Haim Ashkenazy, haim.ashkenazy@tuebingen.mpg.de

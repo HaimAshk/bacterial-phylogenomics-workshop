@@ -1,0 +1,64 @@
+accession	name	strain	block
+GCF_000007805.1	P. syringae pv. tomato	DC3000	backbone
+GCF_000012245.1	P. syringae pv. syringae	B728a	backbone
+GCF_000012205.1	P. savastanoi pv. phaseolicola	1448A	backbone
+GCF_041378945.2	P. savastanoi pv. phaseolicola	HB10Y	backbone
+GCF_000164015.3	P. savastanoi pv. savastanoi	NCPPB 3335	backbone
+GCF_000648735.3	P. syringae pv. actinidiae	ICMP 18884	backbone
+GCF_000344335.2	P. syringae pv. actinidiae	ICMP 9853	backbone
+GCF_000416485.2	P. syringae pv. actinidiae	ICMP 19071	backbone
+GCF_015680915.2	P. syringae pv. actinidifoliorum	ICMP 18803	backbone
+GCF_000145845.2	P. syringae pv. maculicola	ES4326	backbone
+GCF_000145945.2	P. amygdali pv. tabaci	ATCC 11528	backbone
+GCF_002068135.1	P. amygdali pv. lachrymans	NM002	backbone
+GCF_000988485.1	P. syringae pv. syringae	B301D	backbone
+GCF_000452445.2	P. syringae pv. pisi	PP1	backbone
+GCF_001482725.1	P. syringae pv. lapsa	ATCC 10859	backbone
+GCF_030252405.1	P. syringae pv. antirrhini	126	backbone
+GCF_022557235.1	P. syringae pv. helianthi	LMG 5067	backbone
+GCF_022557255.1	P. syringae pv. tagetis	ICMP 4091	backbone
+GCF_003047185.1	P. syringae pv. atrofaciens	LMG5095	backbone
+GCF_009734285.1	P. coronafaciens pv. coronafaciens	B19001	backbone
+GCF_000156995.2	P. coronafaciens pv. oryzae	1_6	backbone
+GCF_016599635.1	P. cannabina pv. alisalensis	MAFF 301419	backbone
+GCF_949769235.1	P. syringae pv. tomato	DAPP-PG 215	backbone
+GCF_062030769.1	P. syringae pv. coryli	NTM-B-30	backbone
+GCF_002905685.2	P. amygdali pv. morsprunorum (race 1)	R15244	cherry_woody
+GCF_002905795.2	P. avellanae (morsprunorum race 2)	R2leaf	cherry_woody
+GCF_002905815.2	P. syringae pv. syringae	Pss9097	cherry_woody
+GCF_900235835.1	P. syringae pv. avii	(none)	cherry_woody
+GCF_900235885.1	P. syringae pv. cerasicola	(none)	cherry_woody
+GCF_900235825.1	P. syringae pv. syringae	(none)	cherry_woody
+GCF_900235815.1	P. syringae	(none)	cherry_woody
+GCF_900235905.1	P. syringae group genomosp. 3	(none)	cherry_woody
+GCF_023277945.1	P. syringae pv. syringae	Pss9644	cherry_woody
+GCF_029855025.1	P. amygdali pv. aesculi	2250	cherry_woody
+GCF_056867645.1	P. amygdali pv. mori	NCSU_AHP143	cherry_woody
+GCF_056867615.1	P. amygdali pv. eriobotryae	NCSU_AHP140	cherry_woody
+GCF_056867625.1	P. amygdali pv. hibisci	NCSU_AHP138	cherry_woody
+GCF_056867685.1	P. amygdali pv. ulmi	NCSU_AHP137	cherry_woody
+GCF_056867665.1	P. amygdali pv. photiniae	NCSU_AHP149	cherry_woody
+GCF_056867605.1	P. amygdali pv. amygdali	NCSU_AHP146	cherry_woody
+GCF_023207855.1	P. amygdali pv. loropetali	AAC	cherry_woody
+GCF_023515865.1	P. avellanae	NCPPB 3491	cherry_woody
+GCF_054719585.1	P. amygdali pv. morsprunorum	Pam_MH_9326	cherry_woody
+GCF_000452605.2	P. syringae	CC440	diversity
+GCF_000452585.2	P. syringae	CC457	diversity
+GCF_000452705.1	P. syringae	CC1557	diversity
+GCF_000452545.2	P. syringae	USA007	diversity
+GCF_000452565.2	P. syringae	UB303	diversity
+GCF_000145825.2	P. syringae	Cit 7	diversity
+GCF_001467365.2	P. syringae	ICMP 11292	diversity
+GCF_900289125.1	P. syringae	CFBP 2116	diversity
+GCF_000452745.2	P. asturiensis	CC1524	diversity
+GCF_040224095.2	P. caspiana	WHRI 7043	diversity
+GCF_018968705.1	P. lijiangensis	LJ2	diversity
+GCF_023278125.1	P. tremae	PA-1-10F	diversity
+GCF_062052470.1	P. ficuserectae	NCPPB 3693	diversity
+GCF_900184295.1	P. viridiflava	CFBP 1590	diversity
+GCF_018388545.1	P. viridiflava	U625	diversity
+GCF_025985525.1	P. viridiflava	Psy35	diversity
+GCF_023497985.1	P. viridiflava	JACO-C-5	diversity
+GCF_018343775.1	P. cichorii	DSM 50259	diversity
+GCF_055392515.1	P. cichorii	SF1-54NalR	diversity
+GCF_900215245.1	P. fluorescens (type strain)	ATCC 13525	outgroup

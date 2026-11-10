@@ -1,0 +1,16 @@
+# Environment 1: genome comparison (handout steps 1-4)
+#   conda env create -f envs/phylo-genomes.yml && conda activate phylo-genomes
+name: phylo-genomes
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - skani
+  - poppunk
+  - drep
+  - ncbi-datasets-cli
+  - entrez-direct
+  - numpy
+  - pandas
+  - matplotlib
